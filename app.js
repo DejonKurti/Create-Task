@@ -13,7 +13,7 @@ const keys = document.querySelectorAll(".key"),
 
 function playNote(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`),
-        key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+          key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
     if (!key) return;
 
@@ -39,3 +39,5 @@ hints.forEach(hintsOn);
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
 
 window.addEventListener("keydown", playNote);
+
+
