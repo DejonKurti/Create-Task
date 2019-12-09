@@ -59,7 +59,7 @@ transition: all .07s ease;
 min-height: 120px;
 }
 
-.keys {
+.pianokeys {
 display: block;
 width: 100%;
 height: 350px;
@@ -140,6 +140,11 @@ transition: opacity .3s ease-out;
 font-size: 20px;
 }
 
-.keys:hover .hints {
+.pianokeys:hover .hints {
 opacity: 1;
+}
+
+.instrument {
+width: 70%;
+border: 4px solid black;
 }

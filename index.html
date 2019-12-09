@@ -9,12 +9,11 @@
 <body>
   <section id="wrap">
     <header>
-      <h1>My Javascript Piano</h1>
-      <h2>Hover for keybinds.</h2>
+      <h1>Hover for Keybinds</h1>
     </header>
     <section id="main">
       <div class="nowplaying"></div>
-      <div class="keys">
+      <div class="pianokeys">
 
         <div data-key="65" class="key" data-note="C">
           <span class="hints">A</span>
@@ -86,13 +85,23 @@
 
       </div>
 
+      <form class="form" action="">
+        <select name="Instrument">
+          <option value="piano">Piano</option>
+          <option value="guitar">Guitar</option>
+        </select>
+        <br><br>
+        <input type="submit">
+      </form>
+      
+
       <audio
         data-key="65"
-        src="http://carolinegabriel.com/demo/js-keyboard/sounds/040.wav"
+        src="sounds/CNote.mp3"
       ></audio>
       <audio
         data-key="87"
-        src="http://carolinegabriel.com/demo/js-keyboard/sounds/041.wav"
+        src="sounds/C#Note.mp3"
       ></audio>
       <audio
         data-key="83"
