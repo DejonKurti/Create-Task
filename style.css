@@ -50,11 +50,20 @@ font-weight: 400;
 margin: 0 0 30px;
 }
 
-.nowplaying {
-font-size: 120px;
+.title {
+font-size: 100px;
 line-height: 1;
 color: #eee;
 text-shadow: 0 0 5rem #028ae9;
+transition: all .07s ease;
+min-height: 120px;
+}
+
+.nowplaying {
+font-size: 80px;
+line-height: 1;
+color: #eee;
+text-shadow: 0 0 5rem #C864F4;
 transition: all .07s ease;
 min-height: 120px;
 }
@@ -67,6 +76,7 @@ max-width: 880px;
 position: relative;
 margin: 40px auto 0;
 cursor: none;
+padding: 5px;
 }
 
 .key {

@@ -7,6 +7,8 @@ function playNote(key){
     }
 }; */
 
+//the switch and case above will be used when I eventually integrate guitar sounds
+
 const keys = document.querySelectorAll(".key"),
     note = document.querySelector(".nowplaying"),
     hints = document.querySelectorAll(".hints");
@@ -20,7 +22,7 @@ function playNote(e) {
     const keyNote = key.getAttribute("data-note");
 
     key.classList.add("playing");
-    note.innerHTML = keyNote;
+    note.innerHTML = keyNote;  //displays note being played
     audio.currentTime = 0;
     audio.play();
 }
@@ -34,7 +36,13 @@ function hintsOn(e, index) {
     e.setAttribute("style", "transition-delay:" + index * 50 + "ms");
 }
 
-hints.forEach(hintsOn);
+function instruction() {
+    alert('Hover over the piano to see the keybinds!');
+}
+
+instruction();
+
+hints.forEach(hintsOn);  //.forEach calls function for each element 
 
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
 
