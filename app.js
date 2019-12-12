@@ -27,7 +27,7 @@ function playNote(e) {
     audio.play();
 }
 
-function removeTransition(e) {
+function soundTransition(e) {
     if (e.propertyName !== "transform") return;
     this.classList.remove("playing");
 } 
@@ -44,7 +44,7 @@ instruction();
 
 hints.forEach(hintsOn);  //.forEach calls function for each element 
 
-keys.forEach(key => key.addEventListener("transitionend", removeTransition));
+keys.forEach(key => key.addEventListener("transitionend", soundTransition));
 
 window.addEventListener("keydown", playNote);
 
