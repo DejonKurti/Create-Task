@@ -6,7 +6,12 @@ function playNote(e) {  //listener that will execute a function named playNote
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`),
           key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
-    if (!key) return;  //check for key to avoid errors 
+    if (!key) {    //check for key to avoid errors 
+        return;
+    }  
+    else {
+        console.log(key);  //displays notes for users in the console in the case the CSS header does not load
+    }
 
     const keyNote = key.getAttribute("data-note");  //retreives data-note (note being played) to be inserted later
 
