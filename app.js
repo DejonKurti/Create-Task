@@ -41,7 +41,7 @@ hints.forEach(hintsOn);  //.forEach calls function for each element
 keys.forEach(key => key.addEventListener("changeend", soundChange));
 
 function pressDown() {
-    window.addEventListener("keydown", playNote);  //when you press down on the keyboard, calls the function
+    window.addEventListener("keydown", playNote(e));  //when you press down on the keyboard, calls the function
 }
 
 //44-45 is my abstraction: playNote is an easy-to-understand command that abstracts the many instructions needed to perform that command
