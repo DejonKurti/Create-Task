@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dejon's Keyboard</title>
     <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 </head>
 <body>
   <section id="wrap">
+    <header>
+      <h1>Create Task</h1>
+    </header>
     <section id="main">
-      <div class='title'> Note: <div class="nowplaying"></div> </div>
+      <div class='title'> Note Being Played: <div class="nowplaying"></div> </div>
       <div class="pianokeys">
-
         <div data-key="65" class="key" data-note="C">
           <span class="hints">A</span>
         </div>
@@ -21,23 +21,18 @@
         <div data-key="87" class="key sharp" data-note="C#">
           <span class="hints">W</span>
         </div>
-
         <div data-key="83" class="key" data-note="D">
           <span class="hints">S</span>
         </div>
-
         <div data-key="69" class="key sharp" data-note="D#">
           <span class="hints">E</span>
         </div>
-
         <div data-key="68" class="key" data-note="E">
           <span class="hints">D</span>
         </div>
-
         <div data-key="70" class="key" data-note="F">
           <span class="hints">F</span>
         </div>
-
         <div data-key="84" class="key sharp" data-note="F#">
           <span class="hints">T</span>
         </div>
@@ -45,127 +40,114 @@
         <div data-key="71" class="key" data-note="G">
           <span class="hints">G</span>
         </div>
-
         <div data-key="89" class="key sharp" data-note="G#">
           <span class="hints">Y</span>
         </div>
-
         <div data-key="72" class="key" data-note="A">
           <span class="hints">H</span>
         </div>
-
         <div data-key="85" class="key sharp" data-note="A#">
           <span class="hints">U</span>
         </div>
-
         <div data-key="74" class="key" data-note="B">
           <span class="hints">J</span>
         </div>
-
         <div data-key="75" class="key" data-note="C">
           <span class="hints">K</span>
         </div>
-
         <div data-key="79" class="key sharp" data-note="C#">
           <span class="hints">O</span>
         </div>
-
         <div data-key="76" class="key" data-note="D">
           <span class="hints">L</span>
         </div>
-
         <div data-key="80" class="key sharp" data-note="D#">
           <span class="hints">P</span>
         </div>
-
         <div data-key="186" class="key" data-note="E">
           <span class="hints">;</span>
         </div>
-
       </div>
-
-      <form class="form" action="">
-        <select name="Instrument">
-          <option value="piano">Piano</option>
-          <option value="guitar">Guitar</option>
-        </select>
-        <br><br>
-        <input type="submit">
-      </form>
       
-
       <audio
         data-key="65"
-        src="sounds/CNote.mp3"
+        src="sounds/CNote.wav"
       ></audio>
       <audio
         data-key="87"
-        src="sounds/CSharp.mp3"
+        src="sounds/CSharp.wav"
       ></audio>
       <audio
         data-key="83"
-        src="sounds/DNote.mp3"
+        src="sounds/DNote.wav"
       ></audio>
       <audio
         data-key="69"
-        src="sounds/DSharp.mp3"
+        src="sounds/DSharp.wav"
       ></audio>
       <audio
         data-key="68"
-        src="sounds/ENote.mp3"
+        src="sounds/ENote.wav"
       ></audio>
       <audio
         data-key="70"
-        src="sounds/FNote.mp3"
+        src="sounds/FNote.wav"
       ></audio>
       <audio
         data-key="84"
-        src="sounds/FSharp.mp3"
+        src="sounds/FSharp.wav"
       ></audio>
       <audio
         data-key="71"
-        src="sounds/GNote.mp3"
+        src="sounds/GNote.wav"
       ></audio>
       <audio
         data-key="89"
-        src="sounds/GSharp.mp3"
+        src="sounds/GSharp.wav"
       ></audio>
       <audio
         data-key="72"
-        src="sounds/ANote.mp3"
+        src="sounds/ANote.wav"
       ></audio>
       <audio
         data-key="85"
-        src="sounds/ASharp.mp3"
+        src="sounds/ASharp.wav"
       ></audio>
       <audio
         data-key="74"
-        src="sounds/BNote.mp3"
+        src="sounds/BNote.wav"
       ></audio>
       <audio
         data-key="75"
-        src="sounds/CNote.mp3"
+        src="sounds/CNote2.wav"
       ></audio>
       <audio
         data-key="79"
-        src="sounds/CSharp.mp3"
+        src="sounds/CSharp2.wav"
       ></audio>
       <audio
         data-key="76"
-        src="sounds/DNote.mp3"
+        src="sounds/DNote2.wav"
       ></audio>
       <audio
         data-key="80"
-        src="sounds/DSharp.mp3"
+        src="sounds/DSharp2.wav"
       ></audio>
       <audio
         data-key="186"
-        src="sounds/ENote.mp3"
+        src="sounds/ENote2.wav"
       ></audio>
     </section>
   </section>
-
-
+  <video
+    playsinline
+    autoplay
+    muted
+    loop
+    id="bgvid"
+      src="vectors.mp4"
+      type="video/mp4">
+  </video>
     <script src="app.js"></script>
 </body>
 </html>
